@@ -348,7 +348,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy;
+							<?php
+								$fromYear = 2019;
+								$thisYear = (int)date('Y');
+								echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');
+							?>
+							<a href="https://github.com/Xtdzs">Frank Gao</a>
 					</footer>
 
 			</div>
