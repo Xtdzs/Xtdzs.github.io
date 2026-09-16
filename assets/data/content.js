@@ -253,14 +253,18 @@ window.SITE_CONTENT = {
         org:  { en: "Lenovo Chengdu R&D Center", zh: "联想成都研发中心" },
         date: "2025.05 — 2025.08",
         points: {
-          en: ["AI engineer: independently developed machine-learning algorithms and AI-agent applications (full-stack except frontend)."],
-          zh: ["AI 工程师：负责面向需求的机器学习算法与 AI Agent 应用开发（除前端外的全部研发工作），独立完成。"]
+          en: ["AI Agent"],
+          zh: ["AI Agent"]
         }
       },
       {
         role: { en: "Research Intern", zh: "科研实习" },
         org:  { en: "National Key Lab of Visual Synthesis of Graphic Images, Sichuan University", zh: "四川大学视觉合成图形图像技术国家级重点实验室" },
-        date: "2024.02 — 2025.02"
+        date: "2024.02 — 2025.02",
+        points: {
+          en: ["Engaged in learning and research on reinforcement learning, computer vision, and related topics."],
+          zh: ["参与学习并研究强化学习、计算机视觉等内容。"]
+        }
       }
     ]
   },
