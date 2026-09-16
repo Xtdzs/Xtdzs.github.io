@@ -389,7 +389,12 @@
 
   function filterPubs(list) {
     var out = list.slice();
-    out.sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
+    /* 按 年 → 月 倒序排列 */
+    out.sort(function (a, b) {
+      var ay = (a.time && a.time.year) || a.year || 0, am = (a.time && a.time.month) || 0;
+      var by = (b.time && b.time.year) || b.year || 0, bm = (b.time && b.time.month) || 0;
+      return (by - ay) || (bm - am);
+    });
     if (pubFilter === 'all') return out;
     if (pubFilter === 'selected') return out.filter(function (p) { return p.selected; });
     return out.filter(function (p) { return p.type === pubFilter; });
@@ -403,9 +408,15 @@
     var authors = t(p.authors) ? authorsHtml(t(p.authors)) : '';
     var venue = t(p.venue);
 
-    /* 引用式排版：作者. 标题. 期刊（类别）. */
+    /* 年月展示：优先 time{year,month}，回退 year */
+    var tm = p.time, dateStr = '';
+    if (tm && tm.year) dateStr = tm.year + (tm.month ? '.' + String(tm.month).padStart(2, '0') : '');
+    else if (p.year) dateStr = String(p.year);
+
+    /* 引用式排版：2026.07 作者. 标题. 期刊（类别）. */
     return '<li class="pub">' +
       '<p class="pub-cite">' +
+        (dateStr ? '<span class="pub-date">' + esc(dateStr) + '</span> ' : '') +
         (authors ? '<span class="pub-authors">' + authors + '</span>. ' : '') +
         (title ? '<span class="pub-title">' + title + '</span>. ' : '') +
         (venue ? '<span class="pub-venue">' + esc(venue) + '</span>' : '') +

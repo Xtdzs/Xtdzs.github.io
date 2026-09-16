@@ -59,7 +59,7 @@ window.SITE_CONTENT = {
       linkLabels: {
         paper: "Paper", pdf: "PDF", arxiv: "arXiv", code: "Code", demo: "Demo",
         data: "Data", project: "Project", slides: "Slides", video: "Video",
-        doi: "DOI", bibtex: "BibTeX", cv: "CV", scholar: "Scholar"
+        doi: "DOI", bibtex: "BibTeX", cv: "CV", scholar: "Google Scholar"
       },
       misc: {
         toLang: "中文",
@@ -162,7 +162,7 @@ window.SITE_CONTENT = {
     links: [
       { icon: "mail",   label: { en: "Email", zh: "邮箱" }, url: "mailto:gaojinliang26@ia.ac.cn" },
       { icon: "github", label: "GitHub", url: "https://github.com/Xtdzs" },
-      { icon: "scholar", label: { en: "Scholar", zh: "谷歌学术" }, url: "https://scholar.google.com/citations?user=N6iXADEAAAAJ" }
+      { icon: "scholar", label: { en: "Google Scholar", zh: "谷歌学术" }, url: "https://scholar.google.com/citations?user=N6iXADEAAAAJ" }
     ]
   },
 
@@ -206,7 +206,7 @@ window.SITE_CONTENT = {
     {
       type: "preprint",
       title: "SDO: Structure-Aware Data Organization for Efficient LLM Post-Training",
-      authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
+      authors: { en: "Jinliang Gao, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu", zh: "高锦梁, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu" },
       venue: { en: "arXiv preprint", zh: "arXiv 预印本" },
       time: { "year": 2026, "month": 7},
       links: [
@@ -216,7 +216,7 @@ window.SITE_CONTENT = {
     {
       type: "journal",
       title: "MSG-Net: Structure-Guided Enhancement for Underwater Images based on Multi-view Feature Interaction",
-      authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
+      authors: { en: "Jie Xu, Junyu Fan, Jinliang Gao, Chuanlin Liao, Yi Lin", zh: "Jie Xu, Junyu Fan, 高锦梁, Chuanlin Liao, Yi Lin" },
       venue: { en: "IEEE Transactions on Multimedia", zh: "IEEE Transactions on Multimedia, CCF-A, SCI Q1" },
       time: { "year": 2026, "month": 1},
       links: [
@@ -226,7 +226,7 @@ window.SITE_CONTENT = {
     {
       type: "journal",
       title: "LLM-Driven Large-Scale Spectrum Access",
-      authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
+      authors: { en: "Ning Yang, Jinliang Gao, Haijun Zhang", zh: "Ning Yang, 高锦梁, Haijun Zhang" },
       venue: { en: "IEEE Transactions on Mobile Computing", zh: "IEEE Transactions on Mobile Computing, CCF-A" },
       time: { "year": 2026, "month": 1},
       links: [
@@ -236,7 +236,7 @@ window.SITE_CONTENT = {
     {
       type: "journal",
       title: "Differences in the epidemiology and survival of patients with colorectal cancer between China and the United States: a large cross-sectional study",
-      authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
+      authors: { en: "Yu Shen, Hongyu Cai, Dan Zhou, Jinliang Gao, Tinghan Yang, Haining Chen, Mingtian Wei, Ziqiang Wang", zh: "Yu Shen, Hongyu Cai, Dan Zhou, 高锦梁, Tinghan Yang, Haining Chen, Mingtian Wei, Ziqiang Wang" },
       venue: { en: "Updates in Surgery", zh: "Updates in Surgery, JCR Q2" },
       time: { "year": 2026, "month": 1},
       links: [

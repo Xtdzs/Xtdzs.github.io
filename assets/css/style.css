@@ -308,6 +308,10 @@ a.chip:hover, button.chip:hover{
 .pub:hover::before{ background:var(--accent); }
 
 .pub-cite{ font-size:.92rem; line-height:1.9; color:var(--soft); }
+.pub-date{
+  font-family:var(--mono); font-size:.72rem; color:var(--mute);
+  margin-right:.45rem; letter-spacing:-.01em;
+}
 .pub-authors{ color:var(--ink); }
 .pub-authors .me{ color:var(--accent); font-weight:600; }
 .pub-authors .eq{ color:var(--mute); font-weight:400; }
