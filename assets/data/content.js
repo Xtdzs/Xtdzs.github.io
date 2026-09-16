@@ -262,8 +262,8 @@ window.SITE_CONTENT = {
         org:  { en: "National Key Lab of Visual Synthesis of Graphic Images, Sichuan University", zh: "四川大学视觉合成图形图像技术国家级重点实验室" },
         date: "2024.02 — 2025.02",
         points: {
-          en: ["Engaged in learning and research on reinforcement learning, computer vision, and related topics."],
-          zh: ["参与学习并研究强化学习、计算机视觉等内容。"]
+          en: ["Engaged in learning and research on reinforcement learning, computer vision, and related topics"],
+          zh: ["参与学习并研究强化学习、计算机视觉等内容"]
         }
       }
     ]
@@ -273,9 +273,13 @@ window.SITE_CONTENT = {
      9) 荣誉 —— 只保留少量可信的竞赛结果；不展示学术服务/教学
      ========================================================================== */
   honors: [
-    { date: "2024", text: { en: "National Undergraduate Mathematical Contest in Modeling (CUMCM), Sichuan First Prize", zh: "全国大学生数学建模竞赛（高教社杯）四川赛区一等奖" } },
-    { date: "2024", text: { en: "Tencent Kaiwu AI Global Open Competition, Traffic-Signal Scheduling track, National 7th", zh: "腾讯开悟人工智能全球公开赛 智能交通信号灯调度赛道 全国第七名" } },
-    { date: "2023", text: { en: "Tencent Kaiwu AI National Open Competition, Game-Theory track, National 3rd", zh: "腾讯开悟人工智能全国公开赛 算法博弈赛道 全国第三名" } }
+    { date: "2026",    text: { en: "Outstanding Undergraduate Thesis, Sichuan University", zh: "本科优秀毕业论文" } },
+    { date: "2024.09", text: { en: "CUMCM (Higher Education Cup) Mathematical Contest in Modeling, Sichuan First Prize", zh: "全国大学生数学建模竞赛（高教社杯）四川省一等奖" } },
+    { date: "2024.08", text: { en: "Tencent Kaiwu AI Global Open Competition, Smart Traffic-Signal Scheduling Track — Sichuan–Chongqing 1st, National 7th (7/500+)", zh: "腾讯开悟人工智能全球公开赛 智能交通信号灯调度赛道 川渝第一 全国第七（7/500+）" } },
+    { date: "2024.08", text: { en: "Tencent Kaiwu AI Global Open Competition, Agent Game-theory Track — Sichuan–Chongqing First Prize, 4th (4/300+)", zh: "腾讯开悟人工智能全球公开赛 智能体博弈算法赛道 川渝地区赛一等奖 第四名（4/300+）" } },
+    { date: "2024-05", text: { en: "The 21st (Tencent Cup) Sichuan University Programming Contest, Silver Award in Final", zh: "第二十一届（腾讯杯）四川大学程序设计竞赛 决赛银奖" } },
+    { date: "2023.12", text: { en: "Tencent Kaiwu AI National Open Competition, Game-theory Track (Advanced) — 3rd in National Final (3/300+)", zh: "腾讯开悟人工智能全国公开赛 算法博弈赛道高级组 总决赛全国第三（3/300+）" } },
+    { date: "2023.09", text: { en: "CUMCM (Higher Education Cup) Mathematical Contest in Modeling, Sichuan Second Prize", zh: "全国大学生数学建模竞赛（高教社杯）四川省二等奖" } }
   ],
 
   service: { en: [], zh: [] },
