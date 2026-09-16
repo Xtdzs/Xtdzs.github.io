@@ -162,9 +162,7 @@ window.SITE_CONTENT = {
     links: [
       { icon: "mail",   label: { en: "Email", zh: "邮箱" }, url: "mailto:gaojinliang26@ia.ac.cn" },
       { icon: "github", label: "GitHub", url: "https://github.com/Xtdzs" },
-      /* TODO: 把下面的 url 换成你的 Google Scholar 个人主页地址
-         （形如 https://scholar.google.com/citations?user=XXXX） */
-      { icon: "scholar", label: { en: "Scholar", zh: "学术" }, url: "https://scholar.google.com/" }
+      { icon: "scholar", label: { en: "Scholar", zh: "学术" }, url: "https://scholar.google.com/citations?user=N6iXADEAAAAJ" }
     ]
   },
 
