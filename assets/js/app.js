@@ -195,7 +195,6 @@
     renderExperience();
     renderService();
     renderContact();
-    renderFooter();
     renderNav();   /* 必须在各版块显隐确定之后 */
     bindSpy();
   }
@@ -526,18 +525,6 @@
     function row(ic, label, val) {
       return '<div class="contact-row">' + icon(ic, 15) + '<span>' + esc(label) + '</span><span>' + val + '</span></div>';
     }
-  }
-
-  /* --- 页脚 --- */
-  function renderFooter() {
-    var p = L(C.profile);
-    var name = t(p.name) || '';
-    var year = new Date().getFullYear();
-    var left = ui('misc', 'copyright').replace('{year}', year).replace('{name}', esc(name));
-    var note = t(L(C.footer).note);
-    var upd = C.lastUpdated ? ' · ' + esc(ui('misc', 'updated')) + ' ' + esc(C.lastUpdated) : '';
-    $id('footLeft').innerHTML = left + upd + (note ? '<br>' + esc(note) : '');
-    $id('footTop').textContent = ui('misc', 'backTop');
   }
 
   /* ================================================================ 交互 */
