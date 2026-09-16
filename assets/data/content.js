@@ -209,7 +209,7 @@ window.SITE_CONTENT = {
       type: "preprint",
       title: "SDO: Structure-Aware Data Organization for Efficient LLM Post-Training",
       authors: { en: "Jinliang Gao, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu", zh: "Jinliang Gao, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu" },
-      venue: { en: "arXiv preprint", zh: "arXiv 预印本" },
+      venue: { en: "arXiv preprint", zh: "arXiv preprint" },
       time: { "year": 2026, "month": 7},
       links: [
         { key: "arxiv", url: "https://arxiv.org/abs/2607.27273v1" }
