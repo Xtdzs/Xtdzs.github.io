@@ -138,8 +138,8 @@ window.SITE_CONTENT = {
       name: "Jinliang Gao",
       shortName: "",
       eyebrow: "",
-      role: "Ph.D. Student in Pattern Recognition and Intelligent Systems",
-      affiliation: "Institute of Automation, Chinese Academy of Sciences",
+      role: "Ph.D. Student at CASIA",
+      affiliation: "",
       advisorLine: "",
       bio: "Ph.D. student at the Institute of Automation, CAS, working on reinforcement learning of large language models."
     },
@@ -147,8 +147,8 @@ window.SITE_CONTENT = {
       name: "高锦梁",
       shortName: "",
       eyebrow: "",
-      role: "模式识别与智能系统 博士研究生",
-      affiliation: "中国科学院自动化研究所",
+      role: "中国科学院自动化研究所博士研究生",
+      affiliation: "",
       advisorLine: "",
       bio: "中国科学院自动化研究所博士研究生，研究方向为大模型强化学习。"
     }
