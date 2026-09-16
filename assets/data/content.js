@@ -161,7 +161,10 @@ window.SITE_CONTENT = {
     office: { en: "", zh: "" },
     links: [
       { icon: "mail",   label: { en: "Email", zh: "邮箱" }, url: "mailto:gaojinliang26@ia.ac.cn" },
-      { icon: "github", label: "GitHub", url: "https://github.com/Xtdzs" }
+      { icon: "github", label: "GitHub", url: "https://github.com/Xtdzs" },
+      /* TODO: 把下面的 url 换成你的 Google Scholar 个人主页地址
+         （形如 https://scholar.google.com/citations?user=XXXX） */
+      { icon: "scholar", label: { en: "Scholar", zh: "学术" }, url: "https://scholar.google.com/" }
     ]
   },
 
@@ -206,19 +209,31 @@ window.SITE_CONTENT = {
       type: "journal",
       title: "MSG-Net: Structure-Guided Enhancement for Underwater Images based on Multi-view Feature Interaction",
       authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
-      venue: { en: "IEEE Transactions on Multimedia, SCI Q1", zh: "IEEE Transactions on Multimedia，SCI 一区" }
+      venue: { en: "IEEE Transactions on Multimedia, SCI Q1", zh: "IEEE Transactions on Multimedia，SCI 一区" },
+      /* TODO: 填写论文链接（arXiv/DOI/PDF 均可），url 留空则不会显示按钮 */
+      links: [
+        { key: "doi", url: "" },
+        { key: "arxiv", url: "" }
+      ]
     },
     {
       type: "journal",
       title: "LLM-Driven Large-Scale Spectrum Access",
       authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
-      venue: { en: "IEEE Transactions on Mobile Computing, CCF-A · SCI Q1", zh: "IEEE Transactions on Mobile Computing，CCF-A · SCI 一区" }
+      venue: { en: "IEEE Transactions on Mobile Computing, CCF-A · SCI Q1", zh: "IEEE Transactions on Mobile Computing，CCF-A · SCI 一区" },
+      links: [
+        { key: "doi", url: "" },
+        { key: "arxiv", url: "" }
+      ]
     },
     {
       type: "journal",
       title: "Differences in the epidemiology and survival of patients with colorectal cancer between China and the United States: a large cross-sectional study",
       authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
-      venue: { en: "Updates in Surgery, JCR Q2", zh: "Updates in Surgery，JCR Q2" }
+      venue: { en: "Updates in Surgery, JCR Q2", zh: "Updates in Surgery，JCR Q2" },
+      links: [
+        { key: "doi", url: "" }
+      ]
     }
   ],
 
@@ -275,10 +290,9 @@ window.SITE_CONTENT = {
   honors: [
     { date: "2026",    text: { en: "Outstanding Undergraduate Thesis, Sichuan University", zh: "本科优秀毕业论文" } },
     { date: "2024.09", text: { en: "CUMCM (Higher Education Cup) Mathematical Contest in Modeling, Sichuan First Prize", zh: "全国大学生数学建模竞赛（高教社杯）四川省一等奖" } },
-    { date: "2024.08", text: { en: "Tencent Kaiwu AI Global Open Competition, Smart Traffic-Signal Scheduling Track — Sichuan–Chongqing 1st, National 7th (7/500+)", zh: "腾讯开悟人工智能全球公开赛 智能交通信号灯调度赛道 川渝第一 全国第七（7/500+）" } },
-    { date: "2024.08", text: { en: "Tencent Kaiwu AI Global Open Competition, Agent Game-theory Track — Sichuan–Chongqing First Prize, 4th (4/300+)", zh: "腾讯开悟人工智能全球公开赛 智能体博弈算法赛道 川渝地区赛一等奖 第四名（4/300+）" } },
-    { date: "2024-05", text: { en: "The 21st (Tencent Cup) Sichuan University Programming Contest, Silver Award in Final", zh: "第二十一届（腾讯杯）四川大学程序设计竞赛 决赛银奖" } },
-    { date: "2023.12", text: { en: "Tencent Kaiwu AI National Open Competition, Game-theory Track (Advanced) — 3rd in National Final (3/300+)", zh: "腾讯开悟人工智能全国公开赛 算法博弈赛道高级组 总决赛全国第三（3/300+）" } },
+    { date: "2024.08", text: { en: "Tencent AI Arena Global Open Competition, Intelligent Traffic Signal Scheduling Track — National 7th", zh: "腾讯开悟人工智能全球公开赛 智能交通信号灯调度赛道 全国第七" } },
+    { date: "2024-05", text: { en: "The 21st (Tencent Cup) Sichuan University Programming Contest, Final Silver Award", zh: "第二十一届（腾讯杯）四川大学程序设计竞赛 决赛银奖" } },
+    { date: "2023.12", text: { en: "Tencent AI Arena AI National Open Competition, Game-Theory Track (Advanced) — 3rd in National Final", zh: "腾讯开悟人工智能全国公开赛 算法博弈赛道高级组 总决赛全国第三" } },
     { date: "2023.09", text: { en: "CUMCM (Higher Education Cup) Mathematical Contest in Modeling, Sichuan Second Prize", zh: "全国大学生数学建模竞赛（高教社杯）四川省二等奖" } }
   ],
 
