@@ -299,7 +299,7 @@ window.SITE_CONTENT = {
         （数组为空则对应小节自动隐藏）
      ========================================================================== */
   awards: [
-    { date: "2026", text: { en: "Outstanding Undergraduate Thesis, Sichuan University", zh: "本科优秀毕业论文" } }
+    { date: "2026.06", text: { en: "Outstanding Undergraduate Thesis, Sichuan University", zh: "本科优秀毕业论文" } }
   ],
 
   competitions: [
