@@ -207,30 +207,30 @@ window.SITE_CONTENT = {
       type: "journal",
       title: "MSG-Net: Structure-Guided Enhancement for Underwater Images based on Multi-view Feature Interaction",
       authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
-      venue: { en: "IEEE Transactions on Multimedia, SCI Q1", zh: "IEEE Transactions on Multimedia，SCI 一区" },
-      /* TODO: 填写论文链接（arXiv/DOI/PDF 均可），url 留空则不会显示按钮 */
+      venue: { en: "IEEE Transactions on Multimedia", zh: "IEEE Transactions on Multimedia, CCF-A, SCI Q1" },
+      time: { "year": 2026, "month": 1},
       links: [
-        { key: "doi", url: "" },
-        { key: "arxiv", url: "" }
+        { key: "doi", url: "https://doi.org/10.1109/TMM.2026.3664995" }
       ]
     },
     {
       type: "journal",
       title: "LLM-Driven Large-Scale Spectrum Access",
       authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
-      venue: { en: "IEEE Transactions on Mobile Computing, CCF-A · SCI Q1", zh: "IEEE Transactions on Mobile Computing，CCF-A · SCI 一区" },
+      venue: { en: "IEEE Transactions on Mobile Computing", zh: "IEEE Transactions on Mobile Computing, CCF-A" },
+      time: { "year": 2026, "month": 1},
       links: [
-        { key: "doi", url: "" },
-        { key: "arxiv", url: "" }
+        { key: "arxiv", url: "https://arxiv.org/abs/2604.13132" }
       ]
     },
     {
       type: "journal",
       title: "Differences in the epidemiology and survival of patients with colorectal cancer between China and the United States: a large cross-sectional study",
       authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
-      venue: { en: "Updates in Surgery, JCR Q2", zh: "Updates in Surgery，JCR Q2" },
+      venue: { en: "Updates in Surgery", zh: "Updates in Surgery, JCR Q2" },
+      time: { "year": 2026, "month": 1},
       links: [
-        { key: "doi", url: "" }
+        { key: "doi", url: "https://doi.org/10.1007/s13304-024-02024-w" }
       ]
     }
   ],
