@@ -489,16 +489,23 @@
   /* --- 荣誉与服务 --- */
   function renderService() {
     var sec = $id('service');
-    var honors = C.honors || [];
+    var awards = C.awards || [];
+    var comps = C.competitions || [];
     var svc = t(C.service), teach = t(C.teaching);
-    if (empty(honors) && empty(svc) && empty(teach)) { sec.hidden = true; return; }
+    if (empty(awards) && empty(comps) && empty(svc) && empty(teach)) { sec.hidden = true; return; }
     sec.hidden = false;
     $id('svc-h').textContent = ui('sections', 'service');
 
     var html = '';
-    if (!empty(honors)) {
-      html += '<h3 class="subhead">' + esc(ui('subheads', 'honors')) + '</h3><ul class="plain-list">' +
-        honors.map(function (h) {
+    if (!empty(awards)) {
+      html += '<h3 class="subhead">' + esc(ui('subheads', 'awards')) + '</h3><ul class="plain-list">' +
+        awards.map(function (h) {
+          return '<li><span class="when">' + esc(h.date || '') + '</span><span>' + inline(t(h.text)) + '</span></li>';
+        }).join('') + '</ul>';
+    }
+    if (!empty(comps)) {
+      html += '<h3 class="subhead">' + esc(ui('subheads', 'competitions')) + '</h3><ul class="plain-list">' +
+        comps.map(function (h) {
           return '<li><span class="when">' + esc(h.date || '') + '</span><span>' + inline(t(h.text)) + '</span></li>';
         }).join('') + '</ul>';
     }

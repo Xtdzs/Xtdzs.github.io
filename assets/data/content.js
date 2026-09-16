@@ -51,7 +51,8 @@ window.SITE_CONTENT = {
         interests: "Research Interests",
         education: "Education",
         work: "Experience",
-        honors: "Honors & Awards",
+        awards: "Awards",
+        competitions: "Competitions",
         reviewing: "Professional Service",
         teaching: "Teaching"
       },
@@ -94,14 +95,15 @@ window.SITE_CONTENT = {
         publications: "学术论文",
         projects: "研究项目",
         experience: "学习与工作经历",
-        service: "竞赛与荣誉",
+        service: "荣誉与竞赛",
         contact: "联系方式"
       },
       subheads: {
         interests: "研究方向",
         education: "教育经历",
         work: "科研与工作经历",
-        honors: "竞赛与荣誉",
+        awards: "荣誉",
+        competitions: "竞赛",
         reviewing: "学术服务",
         teaching: "助教与教学"
       },
@@ -293,10 +295,14 @@ window.SITE_CONTENT = {
   },
 
   /* ==========================================================================
-     9) 荣誉 —— 只保留少量可信的竞赛结果；不展示学术服务/教学
+     9) 荣誉与竞赛 —— 分开两个子类：awards 荣誉 / competitions 竞赛
+        （数组为空则对应小节自动隐藏）
      ========================================================================== */
-  honors: [
-    { date: "2026",    text: { en: "Outstanding Undergraduate Thesis, Sichuan University", zh: "本科优秀毕业论文" } },
+  awards: [
+    { date: "2026", text: { en: "Outstanding Undergraduate Thesis, Sichuan University", zh: "本科优秀毕业论文" } }
+  ],
+
+  competitions: [
     { date: "2024.09", text: { en: "CUMCM (Higher Education Cup) Mathematical Contest in Modeling, Sichuan First Prize", zh: "全国大学生数学建模竞赛（高教社杯）四川省一等奖" } },
     { date: "2024.08", text: { en: "Tencent AI Arena Global Open Competition, Intelligent Traffic Signal Scheduling Track — National 7th", zh: "腾讯开悟人工智能全球公开赛 智能交通信号灯调度赛道 全国第七" } },
     { date: "2024-05", text: { en: "The 21st (Tencent Cup) Sichuan University Programming Contest, Final Silver Award", zh: "第二十一届（腾讯杯）四川大学程序设计竞赛 决赛银奖" } },
