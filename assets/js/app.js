@@ -210,7 +210,8 @@
     $id('brandName').textContent = t(p.shortName) || name;
     $id('brandSub').textContent = t(p.eyebrow) || role;
 
-    document.title = role ? name + ' · ' + role : name;
+    /* 优先用 site.title（如 "Jinliang Gao's Homepage"），留空则回退为「姓名 · 头衔」 */
+    document.title = (C.site && C.site.title) || (role ? name + ' · ' + role : name);
     var desc = t(p.bio) || '';
     var m = $('meta[name="description"]'); if (m) m.setAttribute('content', desc);
     var ogt = $('meta[property="og:title"]'); if (ogt) ogt.setAttribute('content', document.title);
@@ -244,8 +245,6 @@
       var label = id === 'about' ? ui('nav', 'about') : ui('nav', id);
       return '<a href="#' + id + '" data-nav="' + id + '">' + esc(label || id) + '</a>';
     }).join('');
-    nav.classList.remove('is-open');
-    var mb = $id('menuBtn'); if (mb) mb.setAttribute('aria-expanded', 'false');
   }
 
   /* --- 关于 --- */
@@ -253,7 +252,11 @@
     var p = L(C.profile);
     var name = t(p.name) || '';
     $id('aboutName').textContent = name;
-    $id('about-eyebrow').textContent = t(p.eyebrow);
+    /* eyebrow 留空则不显示该行 */
+    var eb = t(p.eyebrow);
+    var ebEl = $id('about-eyebrow');
+    ebEl.textContent = eb;
+    ebEl.style.display = eb ? '' : 'none';
     $id('aboutRole').textContent = t(p.role);
 
     /* 头像：始终渲染姓名缩写做兜底，照片加载失败时自动露出缩写 */
@@ -398,18 +401,20 @@
     var title = inline(t(p.title));
     var url = (p.url || '');
     if (url) title = '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + title + '</a>';
+    var authors = t(p.authors) ? authorsHtml(t(p.authors)) : '';
+    var venue = t(p.venue);
 
+    /* 引用式排版：作者. 标题. 期刊（类别）. */
     return '<li class="pub">' +
-      '<div class="pub-head">' +
-        '<span class="pub-index">' + String(idx).padStart(2, '0') + '</span>' +
-        '<h3 class="pub-title">' + title + '</h3>' +
+      '<p class="pub-cite">' +
+        (authors ? '<span class="pub-authors">' + authors + '</span>. ' : '') +
+        (title ? '<span class="pub-title">' + title + '</span>. ' : '') +
+        (venue ? '<span class="pub-venue">' + esc(venue) + '</span>' : '') +
+      '</p>' +
+      ((p.selected || p.note || links) ? '<div class="pub-meta">' +
         (p.selected ? '<span class="pub-star" title="Selected">' + icon('star', 12) + '</span>' : '') +
         (p.note ? '<span class="badge">' + esc(t(p.note)) + '</span>' : '') +
-      '</div>' +
-      '<p class="pub-authors">' + authorsHtml(t(p.authors)) + '</p>' +
-      (t(p.venue) ? '<p class="pub-venue">' + esc(t(p.venue)) + '</p>' : '') +
-      (links ? '<div class="pub-links">' + links + '</div>' : '') +
-      (p.equal ? '<p class="pub-note">' + esc(ui('misc', 'equalContribution')) + '</p>' : '') +
+        links + '</div>' : '') +
     '</li>';
   }
 
@@ -568,16 +573,6 @@
     /* 主题 */
     $id('themeBtn').addEventListener('click', function () {
       applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
-    });
-
-    /* 移动端菜单 */
-    var mb = $id('menuBtn'), nav = $id('nav');
-    mb.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
-      mb.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    nav.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A') { nav.classList.remove('is-open'); mb.setAttribute('aria-expanded', 'false'); }
     });
 
     /* 顶栏阴影 */
