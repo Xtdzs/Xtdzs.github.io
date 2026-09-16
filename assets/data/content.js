@@ -105,7 +105,7 @@ window.SITE_CONTENT = {
         reviewing: "学术服务",
         teaching: "助教与教学"
       },
-      filters: { all: "全部", conference: "会议", journal: "期刊", preprint: "预印本", selected: "精选" },
+      filters: { all: "全部", conference: "会议", journal: "期刊", preprint: "Preprint", selected: "精选" },
       linkLabels: {
         paper: "论文", pdf: "PDF", arxiv: "arXiv", code: "代码", demo: "演示",
         data: "数据", project: "项目", slides: "幻灯片", video: "视频",
@@ -206,8 +206,8 @@ window.SITE_CONTENT = {
     {
       type: "preprint",
       title: "SDO: Structure-Aware Data Organization for Efficient LLM Post-Training",
-      authors: { en: "Jinliang Gao, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu", zh: "高锦梁, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu" },
-      venue: { en: "arXiv preprint", zh: "arXiv 预印本" },
+      authors: { en: "Jinliang Gao, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu", zh: "Jinliang Gao, Ning Yang, Hai Wang, Baili Xiao, Pin Lyu" },
+      venue: { en: "arXiv preprint", zh: "arXiv preprint" },
       time: { "year": 2026, "month": 7},
       links: [
         { key: "arxiv", url: "https://arxiv.org/abs/2607.27273v1" }
@@ -216,7 +216,7 @@ window.SITE_CONTENT = {
     {
       type: "journal",
       title: "MSG-Net: Structure-Guided Enhancement for Underwater Images based on Multi-view Feature Interaction",
-      authors: { en: "Jie Xu, Junyu Fan, Jinliang Gao, Chuanlin Liao, Yi Lin", zh: "Jie Xu, Junyu Fan, 高锦梁, Chuanlin Liao, Yi Lin" },
+      authors: { en: "Jie Xu, Junyu Fan, Jinliang Gao, Chuanlin Liao, Yi Lin", zh: "Jie Xu, Junyu Fan, Jinliang Gao, Chuanlin Liao, Yi Lin" },
       venue: { en: "IEEE Transactions on Multimedia", zh: "IEEE Transactions on Multimedia, CCF-A, SCI Q1" },
       time: { "year": 2026, "month": 1},
       links: [
@@ -226,9 +226,9 @@ window.SITE_CONTENT = {
     {
       type: "journal",
       title: "LLM-Driven Large-Scale Spectrum Access",
-      authors: { en: "Ning Yang, Jinliang Gao, Haijun Zhang", zh: "Ning Yang, 高锦梁, Haijun Zhang" },
+      authors: { en: "Ning Yang, Jinliang Gao, Haijun Zhang", zh: "Ning Yang, Jinliang Gao, Haijun Zhang" },
       venue: { en: "IEEE Transactions on Mobile Computing", zh: "IEEE Transactions on Mobile Computing, CCF-A" },
-      time: { "year": 2026, "month": 1},
+      time: { "year": 2026, "month": 9},
       links: [
         { key: "arxiv", url: "https://arxiv.org/abs/2604.13132" }
       ]
@@ -236,7 +236,7 @@ window.SITE_CONTENT = {
     {
       type: "journal",
       title: "Differences in the epidemiology and survival of patients with colorectal cancer between China and the United States: a large cross-sectional study",
-      authors: { en: "Yu Shen, Hongyu Cai, Dan Zhou, Jinliang Gao, Tinghan Yang, Haining Chen, Mingtian Wei, Ziqiang Wang", zh: "Yu Shen, Hongyu Cai, Dan Zhou, 高锦梁, Tinghan Yang, Haining Chen, Mingtian Wei, Ziqiang Wang" },
+      authors: { en: "Yu Shen, Hongyu Cai, Dan Zhou, Jinliang Gao, Tinghan Yang, Haining Chen, Mingtian Wei, Ziqiang Wang", zh: "Yu Shen, Hongyu Cai, Dan Zhou, Jinliang Gao, Tinghan Yang, Haining Chen, Mingtian Wei, Ziqiang Wang" },
       venue: { en: "Updates in Surgery", zh: "Updates in Surgery, JCR Q2" },
       time: { "year": 2026, "month": 1},
       links: [

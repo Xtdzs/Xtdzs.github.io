@@ -317,7 +317,10 @@ a.chip:hover, button.chip:hover{
 .pub-authors .eq{ color:var(--mute); font-weight:400; }
 .pub-title{ font-family:var(--serif); font-weight:600; color:var(--ink); }
 .pub-title a:hover{ color:var(--accent); }
-.pub-venue{ font-style:italic; color:var(--mute); font-size:.9em; }
+.pub-venue-row{
+  margin-top:.05rem;
+  font-style:italic; color:var(--mute); font-size:.9em;
+}
 
 .pub-meta{ display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; margin-top:.6rem; }
 .pub-star{ color:var(--accent); display:inline-flex; transform:translateY(2px); }

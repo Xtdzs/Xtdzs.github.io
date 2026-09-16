@@ -413,14 +413,14 @@
     if (tm && tm.year) dateStr = tm.year + (tm.month ? '.' + String(tm.month).padStart(2, '0') : '');
     else if (p.year) dateStr = String(p.year);
 
-    /* 引用式排版：2026.07 作者. 标题. 期刊（类别）. */
+    /* 引用式排版：2026.07 作者. 标题. （期刊单独一行） */
     return '<li class="pub">' +
       '<p class="pub-cite">' +
         (dateStr ? '<span class="pub-date">' + esc(dateStr) + '</span> ' : '') +
         (authors ? '<span class="pub-authors">' + authors + '</span>. ' : '') +
-        (title ? '<span class="pub-title">' + title + '</span>. ' : '') +
-        (venue ? '<span class="pub-venue">' + esc(venue) + '</span>' : '') +
+        (title ? '<span class="pub-title">' + title + '</span>.' : '') +
       '</p>' +
+      (venue ? '<p class="pub-venue-row">' + esc(venue) + '</p>' : '') +
       ((p.selected || p.note || links) ? '<div class="pub-meta">' +
         (p.selected ? '<span class="pub-star" title="Selected">' + icon('star', 12) + '</span>' : '') +
         (p.note ? '<span class="badge">' + esc(t(p.note)) + '</span>' : '') +
