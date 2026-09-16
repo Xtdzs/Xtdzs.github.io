@@ -416,7 +416,7 @@ a.chip:hover, button.chip:hover{
 .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:1.75rem; }
 
 /* ---------- 11. 联系 ---------- */
-#contact .prose{ max-width:38rem; }
+#contact .prose{ max-width:43.5rem; }
 .contact-card{
   margin-top:1.4rem;
   border:1px solid var(--line); border-radius:10px;
