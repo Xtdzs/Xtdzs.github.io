@@ -204,6 +204,16 @@ window.SITE_CONTENT = {
      ========================================================================== */
   publications: [
     {
+      type: "preprint",
+      title: "SDO: Structure-Aware Data Organization for Efficient LLM Post-Training",
+      authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
+      venue: { en: "arXiv preprint", zh: "arXiv 预印本" },
+      time: { "year": 2026, "month": 7},
+      links: [
+        { key: "arxiv", url: "https://arxiv.org/abs/2607.27273v1" }
+      ]
+    },
+    {
       type: "journal",
       title: "MSG-Net: Structure-Guided Enhancement for Underwater Images based on Multi-view Feature Interaction",
       authors: { en: "Jinliang Gao, et al.", zh: "高锦梁 等" },
