@@ -109,7 +109,7 @@ window.SITE_CONTENT = {
       linkLabels: {
         paper: "论文", pdf: "PDF", arxiv: "arXiv", code: "代码", demo: "演示",
         data: "数据", project: "项目", slides: "幻灯片", video: "视频",
-        doi: "DOI", bibtex: "BibTeX", cv: "简历", scholar: "学术"
+        doi: "DOI", bibtex: "BibTeX", cv: "简历", scholar: "谷歌学术"
       },
       misc: {
         toLang: "EN",
@@ -125,7 +125,7 @@ window.SITE_CONTENT = {
         address: "地址",
         skip: "跳到正文",
         equalContribution: "† 表示共同贡献。",
-        openScholar: "完整列表见 Google Scholar →"
+        openScholar: "完整列表见谷歌学术 →"
       }
     }
   },
@@ -162,7 +162,7 @@ window.SITE_CONTENT = {
     links: [
       { icon: "mail",   label: { en: "Email", zh: "邮箱" }, url: "mailto:gaojinliang26@ia.ac.cn" },
       { icon: "github", label: "GitHub", url: "https://github.com/Xtdzs" },
-      { icon: "scholar", label: { en: "Scholar", zh: "学术" }, url: "https://scholar.google.com/citations?user=N6iXADEAAAAJ" }
+      { icon: "scholar", label: { en: "Scholar", zh: "谷歌学术" }, url: "https://scholar.google.com/citations?user=N6iXADEAAAAJ" }
     ]
   },
 
