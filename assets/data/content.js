@@ -147,7 +147,7 @@ window.SITE_CONTENT = {
       name: "高锦梁",
       shortName: "",
       eyebrow: "",
-      role: "中国科学院自动化研究所博士研究生",
+      role: "Ph.D. Student at CASIA",
       affiliation: "",
       advisorLine: "",
       bio: "中国科学院自动化研究所博士研究生，研究方向为大模型强化学习。"
