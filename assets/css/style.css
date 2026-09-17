@@ -458,9 +458,9 @@ a.chip:hover, button.chip:hover{
     padding-block:.35rem;
     row-gap:.15rem;
   }
-  .brand{ margin-right:auto; }
+  .brand{ margin-right:auto; flex:1 1 auto; min-width:0; }
   .brand-sub{ font-size:.64rem; letter-spacing:.05em; }
-  .head-actions{ margin-left:auto; }
+  .head-actions{ margin-left:0; flex-shrink:0; }
   /* 导航第二行，紧凑显示 */
   .nav{
     flex:1 1 100%;
