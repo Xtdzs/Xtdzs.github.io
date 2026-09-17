@@ -460,9 +460,10 @@ a.chip:hover, button.chip:hover{
   }
   .brand{ margin-right:auto; flex:1 1 auto; min-width:0; }
   .brand-sub{ font-size:.64rem; letter-spacing:.05em; }
-  .head-actions{ margin-left:0; flex-shrink:0; }
+  .head-actions{ margin-left:0; flex-shrink:0; order:2; }
   /* 导航第二行，紧凑显示 */
   .nav{
+    order:3;
     flex:1 1 100%;
     flex-wrap:wrap;
     overflow:visible;
