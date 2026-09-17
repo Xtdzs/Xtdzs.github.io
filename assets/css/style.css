@@ -485,6 +485,10 @@ a.chip:hover, button.chip:hover{
   .about-grid{ flex-direction:column-reverse; gap:1.4rem; }
   .avatar{ width:5.75rem; height:5.75rem; }
   .avatar-fallback{ font-size:1.75rem; }
+  /* 极窄屏：导航再瘦身，保证第二行内单行放下 */
+  .nav{ gap:.05rem; }
+  .nav a{ padding:.2rem .42rem; font-size:.75rem; }
+  .nav a.is-active::after{ left:.42rem; right:.42rem; }
   .two-col{ grid-template-columns:1fr; gap:.5rem; }
   .news-list li{ grid-template-columns:1fr; gap:.15rem; }
   .tl-date{ margin-left:0; width:100%; }
