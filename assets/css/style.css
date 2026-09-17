@@ -459,7 +459,7 @@ a.chip:hover, button.chip:hover{
     row-gap:.15rem;
   }
   .brand{ margin-right:auto; }
-  .brand-sub{ display:none; }
+  .brand-sub{ font-size:.64rem; letter-spacing:.05em; }
   .head-actions{ margin-left:auto; }
   /* 导航第二行，紧凑显示 */
   .nav{
