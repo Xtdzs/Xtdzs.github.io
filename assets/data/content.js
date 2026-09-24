@@ -232,6 +232,7 @@ window.SITE_CONTENT = {
       venue: { en: "IEEE Transactions on Mobile Computing", zh: "IEEE Transactions on Mobile Computing, CCF-A" },
       time: { "year": 2026, "month": 9},
       links: [
+        { key: "doi", url: "https://doi.org/10.1109/TMC.2026.3733426" },
         { key: "arxiv", url: "https://arxiv.org/abs/2604.13132" }
       ]
     },
